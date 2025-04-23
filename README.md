@@ -37,4 +37,3 @@ admins.
 You can contact me through the following channels:
 
 - Email: [kamalapalani16@gmail.com](mailto:kamalapalani16@gmail.com)
-- LinkedIn: [kamalaP]((https://www.linkedin.com/in/kamala-p-a1a8121b7))
