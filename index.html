@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <!-- Close Button inside Sidebar -->
+        <div class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i> <!-- Close icon -->
+        </div>
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+        <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+
+      <section id="home" class="home-section">
+        <div class="home-content">
+          <div class="home-text">
+            <h1>Hello,</h1>
+            <h1>This is <span class="highlight-name">KAMALA</span></h1>
+            <h2><span class="typing-loop"></span></h2>
+      
+            <!-- Social Media Links -->
+            <div class="social-links">
+              <a href="https://github.com/Kamala16032001" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/u/kamala_16/" target="_blank" class="social-icon">
+                <img src="images/leetcode_logo.png" alt="LeetCode" style="width: 30px; height: 30px;"/>
+              </a>
+              
+              <a href="https://linkedin.com/in/kamala-p-a1a8121b7" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+      
+            <!-- Buttons -->
+            <div class="home-buttons">
+                <a href="#contact" class="btn">
+                  <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="path/to/your-resume.pdf" download class="btn">
+                  <i class="fas fa-file-download"></i> Download Resume
+                </a>
+              </div>
+          </div>
+
+          <div class="home-image">
+            <img src="images/intro.jpg" alt="Intro Image">
+          </div>
+        </div>
+      </section>
+      
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-wrapper">
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hi, I'm Kamala, I am a quick learner with a self-learning attitude. 
+                   I specialize in Python, HTML, CSS, JavaScript, SQL and Django to build responsive, user-friendly web applications. I love turning ideas into functional digital experiences and solving challenges through code. 
+                   I'm always eager to learn and grow in both technology and organizational management. 
+                   I am available for any kind of job opportunity that suits my skills and interests. </p>
+            </div>
+            <div class="about-photo">
+                <img src="images/profile.jpg" alt="Your Photo">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-card">
+          <div class="experience-img">
+            <img src="images/experience-image.png" alt="Experience Image">
+          </div>
+          <div class="experience-content">
+            <h3>Python Developer Intern | Indian Oil Coorporation Limited</h3>
+            <p><strong>July 2024 - July 2025</strong></p>
+            <ul>
+                <li>Designed and developed dynamic web applications using Python and Flask/Django, integrating with front-end
+                    technologies like HTML, CSS, and JavaScript to deliver seamless user experiences.</li>
+                <li>Utilized MySQL/SQLite to manage and manipulate data for internal projects.</li>
+                <li>Contributed to the documentation of code and technical processes to support future development efforts.</li>
+                <li>Automated data collection and reporting processes, saving X hours per week of manual work.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div id="project-filters">
+            <button class="filter-btn" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+            <button class="filter-btn" onclick="filterProjects('python')">Python</button>
+        </div>
+        <div id="projects-container" class="projects-container">
+            <!-- Dynamic Projects will be inserted here -->
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-wrapper">
+        <div class="skills-list">
+        <!-- Python -->
+        <div class="skill">
+            <img src="images/python_logo.png" alt="Python Logo" class="skill-logo">
+            <p>Python</p>
+        </div>
+  
+      <!-- HTML5 -->
+      <div class="skill">
+        <img src="images/html_logo.png" alt="HTML5 Logo" class="skill-logo">
+        <p>HTML5</p>
+      </div>
+  
+      <!-- CSS3 -->
+      <div class="skill">
+        <img src="images/css_logo.png" alt="CSS3 Logo" class="skill-logo">
+        <p>CSS3</p>
+      </div>
+  
+      <!-- JavaScript -->
+      <div class="skill">
+        <img src="images/js_logo.png" alt="JavaScript Logo" class="skill-logo">
+        <p>JavaScript</p>
+      </div>
+  
+      <!-- C -->
+      <div class="skill">
+        <img src="images/c_logo.png" alt="C Logo" class="skill-logo">
+        <p>C</p>
+      </div>
+  
+      <!-- Django -->
+      <div class="skill">
+        <img src="images/django_logo.png" alt="Django Logo" class="skill-logo">
+        <p>Django</p>
+      </div>
+  
+      <!-- GitHub -->
+      <div class="skill">
+        <img src="images/github_logo.png" alt="GitHub Logo" class="skill-logo">
+        <p>GitHub</p>
+      </div>
+  
+      <!-- SQL -->
+      <div class="skill">
+        <img src="images/sql_logo.png" alt="SQL Logo" class="skill-logo">
+        <p>SQL</p>
+      </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+      
+        <div class="education-card">
+          <h3>Bachelor's in Electronics and Communication Engineering</h3>
+          <p><strong>A.V.C College of Engineering</strong> – 2022 – <strong>8.6 CGPA</strong></p>
+        </div>
+      
+        <div class="education-card">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p><strong>Venus Matriculation Higher Secondary School</strong> – 2018 – <strong>88.25%</strong></p>
+        </div>
+      
+        <div class="education-card">
+          <h3>Secondary School Leaving Certificate (SSLC)</h3>
+          <p><strong>R.C.T Govt Higher Secondary School</strong> – 2016 – <strong>95%</strong></p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-wrapper">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <form action="#" method="POST">
+              <div class="input-container">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="input-container">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>kamalapalani16@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <p>+91 6383931614</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Chidambaram - 608001, India</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    <footer>
+        <p>&copy; Developed Portfolio by Kamala.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+<script>
+    const roles = [
+      "I'm a Python Developer",
+      "I'm a Web Developer",
+      "I'm a Fast Learner"
+    ];
+  
+    const typingSpan = document.querySelector(".typing-loop");
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+  
+    function type() {
+      const currentRole = roles[roleIndex];
+      const visibleText = currentRole.substring(0, charIndex);
+      typingSpan.textContent = visibleText;
+  
+      if (!isDeleting && charIndex < currentRole.length) {
+        charIndex++;
+        setTimeout(type, 100); // Typing speed
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(type, 60); // Deleting speed
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+        setTimeout(type, 1200); // Pause before typing/deleting
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+
+
+</html>
